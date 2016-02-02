@@ -1,7 +1,7 @@
 {
   "name": "ember-human-api",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember-cli addon for using Human API",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -13,7 +13,8 @@
   },
   "repository": "",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 0.10.0",
+    "url": "git+https://github.com/gnazarkin/ember-human-api.git"
   },
   "author": "",
   "license": "MIT",
@@ -39,8 +40,14 @@
     "ember-try": "~0.0.8"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember-human-api",
+    "human-api",
+    "23andme",
+    "23-and-me",
+    "humanapi"
   ],
+  "homepage": "https://github.com/gnazarkin/ember-human-api",
   "dependencies": {
     "ember-cli-babel": "^5.1.5"
   },
