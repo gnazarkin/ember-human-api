@@ -14,10 +14,12 @@ ember install ember-human-api
 * Define your appKey, clientId, clientSecret, and serverEndpoint in config.
 ```
 //config/environment.js
-  appKey: '<app-key-goes-here>',
-  clientId: '<client-id-goes-here>',
-  clientSecret: '<client-secret-goes-here>',
-  serverEndpoint: '<server-endpoint-goes-here>'
+  ENV['human-api'] = {
+    appKey: '<app-key-goes-here>',
+    clientId: '<client-id-goes-here>',
+    clientSecret: '<client-secret-goes-here>',
+    serverEndpoint: '<server-endpoint-goes-here>'
+  }
 //...
 ```
 ###serverEndpoint
@@ -32,7 +34,7 @@ humanapi: Ember.inject.service()
 #### connect()
 `connect()` makes a request to Human API to connect different applications to the specified user. For basic understanding of how Human API request works read: http://hub.humanapi.co/docs/start-here
 
-Accepts __opts__ as an argument. Passed in parameters should container clientUserId and publicToken (if applicable). Returns an __Ember.RSVP.Promise__ which is either resolved with __success__ containing the response from your server endpoint or __err__ which explains why the request failed.
+Accepts __opts__ as an argument. Passed in parameters should container clientUserId and publicToken (if applicable). Returns an __Ember.RSVP.Promise__ which is either resolved with __success__ containing the response from your server endpoint or __error__ which explains why the request failed.
 It is used like this:
 ```
 let user = this.get('model');
