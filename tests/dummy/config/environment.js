@@ -36,6 +36,13 @@ module.exports = function(environment) {
     ENV.APP.LOG_ACTIVE_GENERATION = false;
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
+    ENV['human-api'] = {
+      appKey: '<app-key-goes-here>',
+      clientId: '<client-id-goes-here>',
+      clientSecret: '<client-secret-goes-here>',
+      serverEndpoint: '<server-endpoint-goes-here>'
+    }
+
     ENV.APP.rootElement = '#ember-testing';
   }
 
