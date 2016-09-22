@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('service:human-api', 'Unit | Service | human api', {
+moduleFor('service:humanapi', 'Unit | Service | human api', {
   // Specify the other units that are required for this test.
   // needs: ['service:foo']
 });
